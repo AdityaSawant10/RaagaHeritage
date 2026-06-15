@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F4F4F4;
+  --sand: #E8BD8C;
+  --gold: #B99966;
+  --brown: #9B6A34;
+  --dark-brown: #703700;
+
+  --background: #F4F4F4;
+  --foreground: #1F1F1F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Reusable Container */
+.container-custom {
+  max-width: 1280px;
+  margin: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Gradient Background */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    var(--sand),
+    var(--brown),
+    var(--dark-brown)
+  );
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: var(--brown);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.primary-btn:hover {
+  background-color: var(--dark-brown);
+}
+
+/* Secondary Button */
+.secondary-btn {
+  border: 2px solid var(--brown);
+  color: var(--brown);
+  padding: 12px 24px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.secondary-btn:hover {
+  background-color: var(--brown);
+  color: white;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+/* Card Styling */
+.card-style {
+  background: white;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card-style:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
