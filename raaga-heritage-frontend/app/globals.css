@@ -89,3 +89,15 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
+
+/* Light Theme */
+.light {
+  background-color: #faf7f2;
+  color: #1f1f1f;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #1f1f1f;
+  color: #faf7f2;
+}
